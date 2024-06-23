@@ -1,0 +1,12 @@
+git init 
+git status
+git add [file name]
+git commit -m 'message'
+git commit -a -m 'message'
+git log -p
+git log [commit ID]
+git log [commit ID1]..[commit ID2]
+git diff
+git reset [log ID] --hard
+git revert [log ID]
+git reset [file name]
