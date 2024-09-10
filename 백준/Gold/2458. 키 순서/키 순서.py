@@ -6,28 +6,40 @@
 
 import sys
 
+
+def func(start):
+    global grp
+    n_start=0
+    for i in grp[start]:
+        if grp[start][i] != float('inf'):
+            grp[i][start]=1
+
+
+
+
 n, m = map(int,sys.stdin.readline().split())
 
-grp=[[float('inf') for j in range(n+1)] for i in range(n+1)]
+grp=[[0 for j in range(n+1)] for i in range(n+1)]
 
 for i in range(m):
     start, end = map(int , sys.stdin.readline().split())
     grp[start][end]=1
 
-for i in range(1, n+1):         # 경유지
-    for j in range(1, n+1):     # 출발지
-        for k in range(1, n+1): # 도착지
-            # 출발-도착 > 출발-경유 + 경유-도착 -> 업데이트
-            if grp[j][k] > grp[j][i] + grp[i][k]:
-                grp[j][k] = grp[j][i] + grp[i][k]
+    
+for middle in range(1, n+1):
+    for start in range(1, n+1):
+        for end in range(1, n+1):
+            if grp[start][middle] and grp[middle][end]:
+                grp[start][end]=1
+
 
 result = 0
 
+# n행의 숫자 개수 + n열의 숫자 개수 == 관련된 노드 개수
 for i in range(1, n+1):
     cnt=0
     for j in range(1, n+1):
-        if grp[i][j] != float('inf') or grp[j][i] != float('inf'):
-            cnt+=1
+        cnt+= grp[i][j] + grp[j][i]
 
     if cnt == n-1:
         result+=1
