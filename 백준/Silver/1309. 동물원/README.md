@@ -1,3 +1,4 @@
+<img width="778" alt="동물원 문제" src="https://github.com/user-attachments/assets/42c58802-2f09-41a7-96bf-781c50db0ee8">
 # [Silver I] 동물원 - 1309 
 
 [문제 링크](https://www.acmicpc.net/problem/1309) 
@@ -31,4 +32,3 @@
 ### 출력 
 
  <p>첫째 줄에 사자를 배치하는 경우의 수를 9901로 나눈 나머지를 출력하여라.</p>
-
