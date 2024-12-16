@@ -28,3 +28,4 @@
 
  <p>첫째 줄에 퀸 N개를 서로 공격할 수 없게 놓는 경우의 수를 출력한다.</p>
 
+![IMG_124E522C093B-1](https://github.com/user-attachments/assets/927a251d-8f57-447d-8e63-bf7c5351f112)
