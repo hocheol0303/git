@@ -5,7 +5,7 @@
 import sys
 from collections import deque
 
-# 덩어리 수 출력
+# 이중 반복문에 넣어서 빙산 덩어리 탐색할 것
 def bfs(r, c, iceberg_number):
     global n, m, lst, visited
     d_row = [-1,1,0,0]
@@ -23,7 +23,7 @@ def bfs(r, c, iceberg_number):
                     visited[n_row][n_col] = iceberg_number
                     q.append((n_row,n_col))
 
-
+# 주위 바다만큼 빙산 녹일 것
 def melt():
     global n, m, lst
     d_row = [-1,1,0,0]
@@ -75,6 +75,7 @@ while True:
     else:
         count += 1
         check = melt()
+        # melt에서 영향을 받은 빙산이 있으면 True, 없으면(이미 다 녹음) False 저장
         if check:
             continue
         else:
