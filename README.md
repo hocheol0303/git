@@ -14,6 +14,7 @@
 | 문제번호 | 링크 |
 | ----- | ----- |
 |10026. 적록색약|[링크](./%EB%B0%B1%EC%A4%80/Gold/10026.%E2%80%85%EC%A0%81%EB%A1%9D%EC%83%89%EC%95%BD/README.md)|
+|1005. ACM Craft|[링크](./%EB%B0%B1%EC%A4%80/Gold/1005.%E2%80%85ACM%E2%80%85Craft/README.md)|
 |10282. 해킹|[링크](./%EB%B0%B1%EC%A4%80/Gold/10282.%E2%80%85%ED%95%B4%ED%82%B9/README.md)|
 |1043. 거짓말|[링크](./%EB%B0%B1%EC%A4%80/Gold/1043.%E2%80%85%EA%B1%B0%EC%A7%93%EB%A7%90/%EA%B1%B0%EC%A7%93%EB%A7%90.py)|
 |1068. 트리|[링크](./%EB%B0%B1%EC%A4%80/Gold/1068.%E2%80%85%ED%8A%B8%EB%A6%AC/%ED%8A%B8%EB%A6%AC.py)|
